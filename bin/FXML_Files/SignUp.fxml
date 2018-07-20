@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Password" minHeight="800.0" prefHeight="600.0" prefWidth="779.0" style="-fx-background-color: #253243;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignUpController">
+   <children>
+      <Label layoutX="48.0" layoutY="47.0" prefHeight="20.0" prefWidth="217.0" text="Sign UP" textFill="#f5f0f0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="fullname" layoutX="56.0" layoutY="167.0" prefHeight="30.0" prefWidth="508.0" unFocusColor="#a6684e" />
+      <JFXPasswordField fx:id="password" layoutX="56.0" layoutY="267.0" prefHeight="30.0" prefWidth="520.0" unFocusColor="#dd8808" />
+      <JFXTextField fx:id="email" layoutX="56.0" layoutY="385.0" prefHeight="30.0" prefWidth="529.0" unFocusColor="#dd8808" />
+      <Label layoutX="47.0" layoutY="125.0" text="Full Name" textFill="#f5eded">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="247.0" text="Password" textFill="#fffbfb">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="356.0" text="Email" textFill="#f5f2f2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="checkbox" layoutX="56.0" layoutY="482.0" prefHeight="21.0" prefWidth="328.0" text="I agree terms and condition " textFill="#f5f3f3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXButton fx:id="signup" layoutX="83.0" layoutY="598.0" onAction="#signupAction" prefHeight="53.0" prefWidth="263.0" style="-fx-background-color: #30d6c0;" text="Sign Up" textFill="#f2efef">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="signuplogin" layoutX="404.0" layoutY="598.0" onAction="#login" prefHeight="53.0" prefWidth="263.0" style="-fx-background-color: #30d6c0;" text="Login" textFill="#f8f8f8">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
